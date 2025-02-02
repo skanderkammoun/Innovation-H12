@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Integration</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .section-gap {
+      padding: 50px 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* Responsive Design for Chatbot */
+    @media (max-width: 768px) {
+      iframe {
+        width: 100% !important;
+        height: 500px !important;
+      }
+    }
+
+    /* Fixed Sidebar Chatbot */
+    .chatbot-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    .chatbot-widget iframe {
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1 class="text-center">Welcome to Our Website</h1>
+    <p class="text-center">Explore our content and chat with us for more information!</p>
+  </header>
+
+  <!-- Start Project Area -->
+  <section class="project-area section-gap" id="project">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="menu-content pb-30 col-lg-8">
+          <div class="title text-center">
+            <h1 class="mb-10">Latest Project on the Go</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>						
+    </div>	
+  </section>
+  <!-- End Project Area -->
+
+  <!-- Start Feature Area -->
+  <section class="feature-area section-gap" id="feature">
+    <div class="container">
+      <h2 class="text-center">Chat with Us!</h2>
+      <iframe 
+        src="https://679e9546e9f2eb9c7f718f10.mindpal.ai" 
+        width="400" 
+        height="600" 
+        style="border: none; display: block; margin: 0 auto;"></iframe>
+      
+      <!-- Mindpal Script -->
+      <script id="679e9546e9f2eb9c7f718f10-setup">
+        window.mindpalConfig = {
+          chatbotId: "679e9546e9f2eb9c7f718f10",
+          chatbotAvatarUrl: "https://postimg.cc/TKLbzBLL",
+          chatbotColor: "#2c2c31",
+        };
+      </script>
+      <script 
+        id="679e9546e9f2eb9c7f718f10-run" 
+        src="https://mindpal.space/embed.min.js">
+      </script>
+    </div>
+  </section>
+  <!-- End Feature Area -->
+
+  <!-- Fixed Sidebar Chatbot Widget -->
+  <div class="chatbot-widget">
+    <iframe 
+      src="https://679e9546e9f2eb9c7f718f10.mindpal.ai" 
+      width="300" 
+      height="400">
+    </iframe>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer section-gap">
+    <p class="text-center">&copy; 2025 Your Website. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
